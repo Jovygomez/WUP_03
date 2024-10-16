@@ -40,7 +40,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
 
-This box plot shows us that the consumption of alchol for those in the back seats is the highest, while those in the middle seats consumed less, but more than those you consumed the bleast in the front seats.
+This box plot shows us that the consumption of alcohol for those in the back seats is the highest, while those in the middle seats consumed less, but more than those who consumed the least in the front seats.
   
 ### get fancy  
 
@@ -52,5 +52,5 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 favstats(alcohol~Seat,data=ucdavis1)
 ```
 
-
+The average of ounces consumed for seated in the back would be 8.5, while those seated in the front have an average of 1.7 and those in the middle consumed and average of 3.3 ounces of alcohol. 
 
